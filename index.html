@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Caculator</h1>
+    <form action="">
+        <input type="text" name="" id="number1">
+        <input type="text" name="" id="number2"><br>
+    </form>
+    <div style="margin-top:20px;">
+        <button onclick="checkadd()">Addition(+)</button>
+        <button onclick="checksub()">Subtraction(-)</button>
+        <button onclick="checkmul()">Multiplication(x)</button>
+        <button onclick="checkdiv()">Division(/)</button>
+    </div>
+    <p id="result"></p>
+
+    <script>
+        function checkadd() {
+            let number1 = document.getElementById('number1').value;
+            number1 = Number(number1);
+            let number2 = document.getElementById('number2').value;
+            number2 = Number(number2);
+            let result = number1 + number2;
+            document.getElementById("result").innerHTML = "Result Addition: " + result;
+        }
+
+        function checksub() {
+            let number1 = document.getElementById('number1').value;
+            number1 = Number(number1);
+            let number2 = document.getElementById('number2').value;
+            number2 = Number(number2);
+            let result = number1 - number2;
+            document.getElementById("result").innerHTML = "Result Subtraction: " + result;
+        }
+
+        function checkmul() {
+            let number1 = document.getElementById('number1').value;
+            number1 = Number(number1);
+            let number2 = document.getElementById('number2').value;
+            number2 = Number(number2);
+            let result = number1 * number2;
+            document.getElementById("result").innerHTML = "Result Multiplication: " + result;
+        }
+
+        function checkdiv() {
+            let number1 = document.getElementById('number1').value;
+            number1 = Number(number1);
+            let number2 = document.getElementById('number2').value;
+            number2 = Number(number2);
+            let result = number1 / number2;
+            document.getElementById("result").innerHTML = "Result Division: " + result;
+        }
+    </script>
+</body>
+
+</html>
